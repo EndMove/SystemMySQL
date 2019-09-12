@@ -1,19 +1,23 @@
 <?php
-/*
-========SystemMySQL========
-(c) 2018-2019 MelEnd-Studio
-+++++++++++++++++++++++++++
-Dernière MAJ le: 06-09-2019
-===========================
-Fichier: config.php
-Version: 1.1
-*/
-$error_action = "load";                     // En cas d'erreur: (1: redirection http 'redirect', 2: afficher erreur 'load')
-$error_url = "https://melend-studio.eu/";   // Url pour la redirection http en cas d'erreur (uniquement en mode 'redirect')
+/**
+ * ==== SystemMySQL ====
+ *
+ * SQL management API, use PDO and MySQLi
+ *
+ * @package    config
+ * @author     Original SoftaLabs DevTeam <dev@softalabs.com>
+ * @copyright  © 2019 SoftaLabs, All Rights Reserved
+ * @version    Version: 1.0.0
+ * @link       https://www.softalabs.com/
+ *
+ * Update: 12-09-2019
+ */
+$error_action = "load";                     // In case of error: (1: redirection http 'redirect', 2: display error 'load')
+$error_url = "https://www.softalabs.com/";  // Url for http redirection in case of error (only in redirect mode)
 
-$logs_file = "logs/api_sql.log";            // Chemin du fichier de logs depuis la racine du site web
+$logs_file = "logs/api_sql.log";            // Log file path from the root of the website
 
-$bases_MySQL = [                            // Liste des bases de données MySQL
+$bases_MySQL = [                            // List of MySQL databases
     1 => [
         "status" => true,
         "prefix" => "bdd1",

@@ -1,13 +1,17 @@
 <?php
-/*
-========SystemMySQL========
-(c) 2018-2019 MelEnd-Studio
-+++++++++++++++++++++++++++
-Dernière MAJ le: 06-09-2019
-===========================
-Fichier: api_sql.php
-Version: 1.2
-*/
+/**
+ * ==== SystemMySQL ====
+ *
+ * SQL management API, use PDO and MySQLi
+ *
+ * @package    api_sql
+ * @author     Original SoftaLabs DevTeam <dev@softalabs.com>
+ * @copyright  © 2019 SoftaLabs, All Rights Reserved
+ * @version    Version: 1.0.0
+ * @link       https://www.softalabs.com/
+ *
+ * Update: 12-09-2019
+ */
 require('config.php');
 $sql_error = array();
 
