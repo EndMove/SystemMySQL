@@ -10,7 +10,7 @@
  * @version    Version: 1.0.0
  * @link       https://www.softalabs.com/
  *
- * Update: 12-09-2019
+ * Update: 08-02-2019
  */
 require('config.php');
 $sql_error = array();
@@ -101,6 +101,7 @@ if(!empty($sql_error)) {
             echo "<p style='text-align: center;'><span style='background-color: #ffff00; color: #ff0000;'>$msg</span></p>";
         }
     }
+    die();
 }
 
 
